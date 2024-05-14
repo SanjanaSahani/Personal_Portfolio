@@ -11,16 +11,19 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-
+         <input type="checkbox" id="nav_check" hidden>
         <nav class="navbar">
-           
             <a href="#home" style="--i:1">Home</a>
             <a href="#about" style="--i:2">About</a>
             <a href="#skills" style="--i:3">Skills</a>
             <a href="#portfolio" style="--i:4">Project</a>
-            <a href="#contact" style="--i:5">Contact</a>
-            
+            <a href="#contact" style="--i:5">Contact</a>  
         </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
     </header>
 
     <section class="home" id="home">
@@ -89,7 +92,7 @@
 
     <h1 class="sub-title">My <span>Skills</span></h1>
     <section>
-        <div class="container1" id="skills">
+        <div class="container1" id="skills" style="margin-bottom: 10%;">
             <h1 class="heading1">Technical Skills</h1>
             <div class="Technical-bars">
                 <div class="bar"><i style="color: #c95d2e;" class="fa-brands fa-html5"></i>
@@ -109,7 +112,6 @@
                     </div>
                 </div>
                 <div class="bar"><img style="height: 20px; width: 20px;"  src="./images/Tailwind_CSS_Logo.svg.png" alt="">
-                    <!-- <i style="color: #147bbc;" class="fa-brands fa-tailwindcss-alt"></i> -->
                     <div class="info">
                         <span>Tailwind CSS</span>
                     </div>
@@ -144,7 +146,7 @@
             </div>
         </div>
 
-        <div class="container1" style="margin-top: 10%;">
+        <div class="container1" id="container1">
             <h1 class="heading1 " style="font-size: 30px;">Professional Skills</h1>
             <div class="radial-bars">
             <div class="radial-bar">
@@ -199,12 +201,11 @@
                     </div>
                    
                     <div class="row">
-                        <img src="images/Screenshot (7).png" alt="">
+                        <img src="images/Screenshot (4).png" alt="">
                         <div class="layer">
-                            <h5>Currency Convertor</h5>
-                           <p>About
-                            This is a simple Currency Converter Project which is made with the help of Tailwind CSS and React JS.In this project,it convert currencies of different countries with different list of countries.</p>
-                            <a href="https://loquacious-nougat-2c4ac5.netlify.app"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                            <h5>Interactive Recipes App</h5>
+                           <p>"Explore delicious recipes with our interactive app! Built using React.js and Tailwind CSS for a seamless user experience. Discover, cook, and share your favorite dishes effortlessly. Get ready to elevate your culinary adventures!"</p>
+                            <a href="https://warm-croquembouche-bf667f.netlify.app"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
                         </div>
                     </div>
                    
@@ -213,7 +214,7 @@
                         <div class="layer">
                             <h5>Flower Shop Website</h5>
                            <p>   This is a Simple E-commerce Project which is made with the help of Tailwind CSS and React JS. </p>
-                            <a href="https://github.com/SanjanaSahani/FlowerShop"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                            <a href="https://dreamy-babka-cb0889.netlify.app"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
                         </div>
                     </div>
                 </div>
@@ -253,7 +254,7 @@
     </section>
 
     <div class="last-text">
-        <p>Developed with love by SanjanaSahani @ 2023</p>
+        <p>Developed with &hearts; by SanjanaSahani @2023</p>
     </div>
     <a href="#" class="top"><i class="fa-solid fa-arrow-up fa-beat-fade"></i></a>
 
