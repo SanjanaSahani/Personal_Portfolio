@@ -55,6 +55,17 @@ nav .openmenu{
     color: #0ef;
 }
 
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #0ef;
+}
+
 .home{
     position: relative;
     width: 100%;
@@ -346,22 +357,22 @@ section{
     opacity: 0;
 }
 .progress-line.html span::after{
-    content: "85%";
+    content: "90%";
 }
 .progress-line.css span::after{
-    content: "80%";
+    content: "87%";
 }
 .progress-line.tailwind span::after{
-    content: "75%";
+    content: "80%";
 }
 .progress-line.javascript span::after{
-    content: "65%";
+    content: "75%";
 }
 .progress-line.python span::after{
     content: "60%";
 }
 .progress-line.react span::after{
-    content: "45%";
+    content: "70%";
 }
 .progress-line span::after{
     content: "";
@@ -730,4 +741,63 @@ section{
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+@media only screen and (max-width:1024px) {
+.navbar a{
+    margin-left: 15px;
+}
+.container1{
+    margin-top: 95px;
+}
+}
+
+
+@media only screen and (max-width:632px) {
+    .logo{
+        width: 20%;
+        margin-right: 208px;
+    }
+   .hamburger{
+    display: block;
+   } 
+   .header nav{
+    position: absolute;
+    left: -150%;
+    top: 80px;
+    padding: 23px;
+    transition: 0.3s;
+    background: rgba(4, 4, 26, 0.5);
+    backdrop-filter: blur(10px);
+    
+   }
+   .header #nav_check:checked~nav{
+    left: 0;
+    width: min-content;
+   }
+   nav a{
+    display: block;
+    color: black;
+    margin: 5px 0;
+   }
+   .about{
+    grid-template-columns: none;
+    margin-left: 30px;
+   }
+   .container {
+    padding: 60px;
+}
+   .container1 {
+    margin-left: 1px;
+
+}
+#container1{
+    margin-top: 70%;
+}
+.contact{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+}
+.contact-text h2 {
+    font-size: 60px;
+}
 }
